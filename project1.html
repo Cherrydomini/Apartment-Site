@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Lodge</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="상단">
+            <div id="logo"><h1>City Lodge</h1></div>
+            <nav>
+                <button id="hamburgerID" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="menuID" class="menu">
+                    <a href="#intro">Intro</a>
+                    <a href="#floorplan">Floorplans</a>
+                    <a href="#amenities">Amenities</a>
+                    <a href="#directions">Directions</a>
+                </div>
+            </nav>
+        </div>
+        <div class="메인이미지">
+            <h1>City <br> Lodge</h1>
+        </div>
+        <div class="콘텐츠">
+            <div id="intro">
+                <h1>NEW URBAN LIVING</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit malesuada justo ut 
+                    maximus. Donec felis eros, malesuada non faucibus vitae, imperdiet et massa. Duis lacinia ipsum 
+                    at bibendum viverra. Mauris vehicula felis elit, et rutrum tortor lobortis id. Duis lobortis interdum 
+                    vestibulum. Quisque viverra ultrices lectus vitae sodales. Duis varius lectus nec luctus eleifend. 
+                    Pellentesque augue tellus, tincidunt id rhoncus quis, accumsan vel odio. 
+                </p>
+            </div>
+            <div id="floorplan">
+                <h3>평면도<br>Floorplans</h3>
+                <ul>
+                    <li>
+                        <img src="./images/floorplan2.png"/><span id="caption">
+                        총 68실<br>
+                        전용면적<br>
+                        39.9962m² (12.0989py)<br>
+                        계약면적<br>
+                        90.2747m² (27.3081py)<br>
+                        1 ― Bedroom<br>
+                        2 ― Kitchen<br>
+                        3 ― UX room<br>
+                        4 ― Bathroom & Powder room<br>
+                        5 ― Living & Dining</span>
+                    </li>
+                    <li>
+                        <img src="./images/floorplan2.png"/><span id="caption">
+                        총 17<br>
+                        전용면적<br>
+                        46.4044m² (14.0373py)<br>
+                        계약면적<br>
+                        104.6783m² (31.6652py)<br>
+                        1 ― Bedroom<br>
+                        2 ― Kitchen<br>
+                        3 ― UX room<br>
+                        4 ― Bathroom & Powder room<br>
+                        5 ― Living & Dining<br>
+                        6 ― Dress room</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="amenities">
+                <h3>오락시설<br>Amenities</h3>
+                <ul>
+                    <li>
+                        <img src="./images/parking.png"/>
+                        <h2>PARKING</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum accumsan arcu, sit amet sollicitudin sapien venenatis et. Suspendisse aliquam.</span>
+                    </li>
+                    <li>
+                        <img src="./images/health-center.png"/>
+                        <h2>HEALTH CENTER</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum accumsan arcu, sit amet sollicitudin sapien venenatis et. Suspendisse aliquam.</span>
+                    </li>
+                    <li>
+                        <img src="./images/botanical-garden.png"/>
+                        <h2>BOTANICAL GARDEN</h2>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum accumsan arcu, sit amet sollicitudin sapien venenatis et. Suspendisse aliquam.</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="directions">
+                <h3>오시는길<br>Directions</h3>
+                <img src="./images/map.png"/>
+                <span>서울특별시 중구 세종대로 124</span>
+            </div>
+        </div>
+        <div class="하단">
+            <div id="SNS">
+                <ul>
+                    <li>Kakao</li>
+                    <li>Naver</li>
+                    <li>email</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        'use strict'
+        document.getElementById("hamburgerID").onclick = function() {dropmenu()};
+        function dropmenu(){
+            document.getElementById("menuID").classList.toggle("show");
+        }
+
+    </script>
+</body>
+</html>
